@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.95.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,14 +25,14 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.codyze.io/docs/mark-authors/mark-authors/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2020-02-05T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-01-20T19:56:53&#43;01:00" /><meta property="og:site_name" content="Codyze" />
+<meta property="article:published_time" content="2020-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-05T00:00:00+00:00" /><meta property="og:site_name" content="Codyze" />
 
 <meta itemprop="name" content="MARK Rules">
 <meta itemprop="description" content="Built-ins of MARK
-"><meta itemprop="datePublished" content="2020-02-05T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-20T19:56:53&#43;01:00" />
-<meta itemprop="wordCount" content="557">
+"><meta itemprop="datePublished" content="2020-02-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-02-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="944">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MARK Rules"/>
 <meta name="twitter:description" content="Built-ins of MARK
@@ -42,8 +42,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" as="style">
-<link href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" as="style">
+<link href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -103,7 +103,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 </div>
 </nav>
@@ -130,7 +130,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
@@ -181,36 +181,19 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconfiguration" href="/docs/getting-started/configuration/">Configure Codyze</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedcli" href="/docs/getting-started/cli/">Using CLI mode</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconsole" href="/docs/getting-started/console/">Using the Codyze Console</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/crymlin-query/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Crymlin Query Language</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docscrymlin-query">
-      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedlsp" href="/docs/getting-started/lsp/">Using plugins</a>
       
       
     </li>
@@ -411,32 +394,105 @@
 </pre>
 <h3 id="built-in-predicates">Built-in Predicates</h3>
 <p>MARK comes with a number of built in functions that can be used as predicates in conditions and preconditions. These built-ins are called when MARK rules are evaluated and operate over their input arguments (typically MARK objects or constants) and the current evaluation context. By convention, built-ins should start with an underscore (<code>_</code>). When a built-in fails, it will return an <code>Error</code> object that always evaluates to <em>not applicable</em>, i.e. neither true nor false.</p>
+<h4 id="_between">_between</h4>
+<p><strong>Function:</strong> <code>_between(String str, String start, String end)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _between(&#34;&lt;09&gt;&#34;, &#34;&lt;&#34;, &#34;&gt;&#34;) == &#34;09&#34;
+</code></pre><p>Returns the part of the string between <code>start</code> and <code>end</code> which both have to be part of the string. If <code>start</code> or <code>end</code> are not part of the string, this returns an <code>Error</code>.</p>
+<h4 id="_direct_eog_connection">_direct_eog_connection</h4>
+<p><strong>Function:</strong> <code>_direct_eog_connection(Node n1, Node n2)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _direct_eog_connection(n1, n2)
+</code></pre><p>Checks if there is a <em>direct</em> EOG-connection (i.e., without branches) between the two given vertices.</p>
+<h4 id="_eog_connection">_eog_connection</h4>
+<p><strong>Function:</strong> <code>_eog_connection(Node n1, Node n2)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _eog_connection(n1, n2)
+</code></pre><p>Checks if there is an arbitrary EOG-connection between the two given vertices.</p>
+<h4 id="_get_code">_get_code</h4>
+<p><strong>Function:</strong> <code>_get_code(a)</code></p>
+<p><strong>Example:</strong>  TODO</p>
+<p>Returns the corresponding source code of MARK object <code>a</code>. If this is not possible, this returns an <code>Error</code>.</p>
 <h4 id="_has_value">_has_value</h4>
 <p><strong>Function:</strong> <code>__has_value(a,b)</code></p>
 <p><strong>Example:</strong></p>
-<pre><code>  ensure
+<pre tabindex="0"><code>  ensure
      __has_value(a, b)
 </code></pre><p>Returns <code>true</code> if MARK object <code>a</code> may be assigned value <code>b</code> (e.g., a constant).</p>
 <h4 id="_inside_same_function">_inside_same_function</h4>
 <p><strong>Function:</strong> <code>__inside_same_function(a,b)</code></p>
 <p><strong>Example:</strong></p>
-<pre><code>  ensure
+<pre tabindex="0"><code>  ensure
      __inside_same_function(a, b)
 </code></pre><p>Returns <code>true</code> if MARK objects <code>a</code> and <code>b</code> reside in the same function.</p>
 <h4 id="_is">_is</h4>
 <p><strong>Function:</strong> <code>_is(a,b)</code></p>
 <p><strong>Example:</strong></p>
-<pre><code>  ensure
+<pre tabindex="0"><code>  ensure
      _is(a, b)
 </code></pre><p>Returns <code>true</code> if MARK object <code>a</code> is equal to variable <code>b</code>.</p>
+<h4 id="_is_instance">_is_instance</h4>
+<p><strong>Function:</strong> <code>_is_instance(a, String classname)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _is_instance(a, &#34;java.lang.String&#34;)
+</code></pre><p>Returns <code>true</code> if MARK object <code>a</code> is an instance of <code>classname</code>. <code>classname</code> has to be the fully qualified name of the class.</p>
+<h4 id="_length">_length</h4>
+<p><strong>Function:</strong> <code>_length(a)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+    _length(a) == 5 // e.g. for array declaration `new int[5]`
+</code></pre><p>Returns the length of MARK object <code>a</code>. Currently, this can only return the dimension of an Java array.</p>
+<h4 id="_now">_now</h4>
+<p><strong>Function:</strong> <code>_now()</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+    _now() == 1653955200 // 2022-05-31T00:00:00Z
+</code></pre><p>Returns the current time as the number of seconds since epoch (1970-01-01T00:00:00Z). Relies on Java&rsquo;s Instant.now().</p>
+<h4 id="_receives_value_from">_receives_value_from</h4>
+<p><strong>Function:</strong> <code>_receives_value_from(a,b)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _receives_value_from(a, b)
+</code></pre><p>Returns <code>true</code>, if there is a data flow from <code>a</code> to <code>b</code>.</p>
 <h4 id="_split">_split</h4>
 <p><strong>Function:</strong> <code>_split(String str, String splitter, int position)</code></p>
-<p><strong>Example:</strong>  TODO</p>
-<p>Behaves like the Java expression <code>String.split(String splitter)[position]</code>. That is, it splits the string <code>str</code> at all occurrences of <code>splitter</code> and returns the <code>position</code>th substring. Returns an <code>Error</code> if no such occurrence is found.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _split(&#34;ASD/EFG/JKL&#34;, &#34;/&#34;, 1) == &#34;EFG&#34;
+</code></pre><p>Behaves like the Java expression <code>String.split(String splitter)[position]</code>. That is, it splits the string <code>str</code> at all occurrences of <code>splitter</code> and returns the <code>position</code>th substring. Returns an <code>Error</code> if no such occurrence is found.</p>
+<h4 id="_split_disjoint">_split_disjoint</h4>
+<p><strong>Function:</strong> <code>_split_disjoint(String str, String splitter, List set)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _split_disjoint(&#34;ASD/EFG/JKL&#34;, &#34;/&#34;, [&#34;ABC&#34;, &#34;EFG&#34;, &#34;JKL&#34;])
+</code></pre><p>Splits <code>str</code> at all occurrences of <code>splitter</code> and checks, if any of the resulting elements is part of the provided set. Returns an <code>Error</code> if no occurrence of <code>split</code> is found.</p>
+<h4 id="_split_match_unordered">_split_match_unordered</h4>
+<p><strong>Function:</strong> <code>_split_match_unordered(String str, String splitter, List set, Boolean strict)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _split_match_unordered(&#34;ASD/EFG/JKL&#34;, &#34;/&#34;, [&#34;ASD&#34;, &#34;EFG&#34;, &#34;JKL&#34;], true)
+</code></pre><p>Splits <code>str</code> at all occurrences of <code>splitter</code> and checks, if resulting elements are part of the provided set. The optional parameter <code>strict</code> controls if the set resulting from splitting should be identical to the provided set. Returns an <code>Error</code> if no occurrence of <code>split</code> is found.</p>
+<h4 id="_starts_with">_starts_with</h4>
+<p><strong>Function:</strong> <code>_starts_with(String str, String start)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+     _starts_with(&#34;ASDEFGJKL&#34;, &#34;ASD&#34;)
+</code></pre><p>Returns <code>true</code> if <code>str</code> starts with <code>start</code>.</p>
+<h4 id="_year">_year</h4>
+<p><strong>Function:</strong> <code>_year(Int time)</code></p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>  ensure
+    _year(1653955200) == 2022 // 2022-05-31T00:00:00Z
 
+Returns the year in which `time` is in. `time` represents the number of seconds since epoch (1970-01-01T00:00:00Z).
+</code></pre>
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 20, 2021: <a  href="/commit/d807fe7f24e58497ad0925ebb0fd411b376cef9b">Documentation update (d807fe7f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified February 5, 2020
 </div>
 </div>
 
@@ -489,7 +545,7 @@
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 Fraunhofer AISEC All Rights Reserved</small>
+        <small class="text-white">&copy; 2022 Fraunhofer AISEC All Rights Reserved</small>
         <small class="ml-1"><a href="https://www.aisec.fraunhofer.de/en/data_protection.html" target="_blank">Privacy Policy</a></small>
 	
       </div>
@@ -511,7 +567,7 @@
 
 
 
-<script src="/js/main.min.b5c846b8d2996d7bafac026aa017523479f9839b6ef44c5a3f80093febafc4af.js" integrity="sha256-tchGuNKZbXuvrAJqoBdSNHn5g5tu9ExaP4AJP&#43;uvxK8=" crossorigin="anonymous"></script>
+<script src="/js/main.min.20e61c746b3b89f878c8f7a9526cdd30f74eed7d7b0a06489ab1b7b099fb52ba.js" integrity="sha256-IOYcdGs7ifh4yPepUmzdMPdO7X17CgZImrG3sJn7Uro=" crossorigin="anonymous"></script>
 
 
 

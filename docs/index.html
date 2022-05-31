@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.95.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -38,8 +38,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" as="style">
-<link href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" as="style">
+<link href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -99,7 +99,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 </div>
 </nav>
@@ -126,7 +126,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
@@ -177,36 +177,19 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconfiguration" href="/docs/getting-started/configuration/">Configure Codyze</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedcli" href="/docs/getting-started/cli/">Using CLI mode</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconsole" href="/docs/getting-started/console/">Using the Codyze Console</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/crymlin-query/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Crymlin Query Language</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="docscrymlin-query">
-      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedlsp" href="/docs/getting-started/lsp/">Using plugins</a>
       
       
     </li>
@@ -330,7 +313,7 @@
 <div class="td-content">
 	<h1>Documentation</h1>
 	<div class="lead">Codyze is a static analysis tool to support developers in verifying compliance to security requirements</div>
-	<p>Security is hard and implementing it correctly is even harder. Luckily, there are well-established and battle-proven libraries available that do the heavy lifting of security functions such as authentication, logging or encryption. But even when using these libraries in application code, developers run the risk of making subtle errors that may undermine the security of their application. This is where Codyze helps. It integrates into the IDE or CI pipeline, analyses source code and tells developers if they are using libraries in a correct or in an insecure way.</p>
+	<p>Security is hard and implementing it correctly is even harder. Luckily, there are well-established and battle-proven libraries available that do the heavy lifting of security functions such as authentication, logging or encryption. But even when using these libraries in application code, developers run the risk of making subtle errors which may undermine the security of their application. This is where Codyze helps. By integrating it into an IDE or CI pipeline, developers can analyse their source code while programming and check if they are using libraries in a correct or in an insecure way.</p>
 <h2 id="how-does-it-work">How does it work?</h2>
 <p>In contrast to many other static analysis tools, Codyze directly analyzes the source code and does not require a compiler tool-chain. It can thus even analyse incomplete source code and tolerate small syntax errors.</p>
 <p>Codyze is based on a &ldquo;Code Property Graph&rdquo;, which represents the source code as a graph and adds semantic information to support the analysis. This representation can be used in two ways:</p>
@@ -342,10 +325,10 @@
 alt="Overview of Codyze"
 class="mt-3 mb-3"></p>
 <h2 id="why-codyze">Why Codyze?</h2>
-<p>Codyze checks source code for the correct usage of libraries. It is an addition to generic static analysis tools such as Sonarqube, Frama-C, or Checkerframework and specifically verifies that libraries are used as originally intended by their developers.</p>
-<p><strong>Library developers</strong> write rules in a simple domain specific language, called <em>MARK</em>.</p>
-<p><strong>Developers</strong> using the library verify their code against these rules using Codyze - either as an IDE-plugin or as a CI module.</p>
-<p><strong>Integrators</strong> of open source components may want to verify these components using the automated analyis of Codyze or by manually search the code for critical patterns, using the <em>Crymlin</em> query language.</p>
+<p>Codyze checks source code for the correct usage of libraries. It is an addition to generic static analysis tools such as Sonarqube, Frama-C, or the Checker Framework and specifically verifies that libraries are used as originally intended by their developers.</p>
+<p><strong>Library developers</strong> write rules for their library in a simple domain specific language, called <em>MARK</em>.</p>
+<p><strong>Developers</strong> verify their code against rules of modelled libraries using Codyze - either as an IDE-plugin or as a CI module.</p>
+<p><strong>Integrators</strong> of open source components may want to verify these components using the automated analyis of Codyze or by manually search the code for critical patterns.</p>
 
         <div class="section-index">
     
@@ -357,7 +340,7 @@ class="mt-3 mb-3"></p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 20, 2021: <a  href="/commit/d807fe7f24e58497ad0925ebb0fd411b376cef9b">Documentation update (d807fe7f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 24, 2022
 </div>
 </div>
 
@@ -409,7 +392,7 @@ class="mt-3 mb-3"></p>
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 Fraunhofer AISEC All Rights Reserved</small>
+        <small class="text-white">&copy; 2022 Fraunhofer AISEC All Rights Reserved</small>
         <small class="ml-1"><a href="https://www.aisec.fraunhofer.de/en/data_protection.html" target="_blank">Privacy Policy</a></small>
 	
       </div>
@@ -431,7 +414,7 @@ class="mt-3 mb-3"></p>
 
 
 
-<script src="/js/main.min.b5c846b8d2996d7bafac026aa017523479f9839b6ef44c5a3f80093febafc4af.js" integrity="sha256-tchGuNKZbXuvrAJqoBdSNHn5g5tu9ExaP4AJP&#43;uvxK8=" crossorigin="anonymous"></script>
+<script src="/js/main.min.20e61c746b3b89f878c8f7a9526cdd30f74eed7d7b0a06489ab1b7b099fb52ba.js" integrity="sha256-IOYcdGs7ifh4yPepUmzdMPdO7X17CgZImrG3sJn7Uro=" crossorigin="anonymous"></script>
 
 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.95.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -20,30 +20,30 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Using the Codyze Console | Codyze</title><meta property="og:title" content="Using the Codyze Console" />
-<meta property="og:description" content="The Codyze console allows to interactively explore and analye source code.
+<title>Configuration | Codyze</title><meta property="og:title" content="Configuration" />
+<meta property="og:description" content="Codyze offers a multitude of configurations to customize the analysis to your liking.
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.codyze.io/docs/getting-started/console/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2020-05-25T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-01-20T19:56:53&#43;01:00" /><meta property="og:site_name" content="Codyze" />
+<meta property="og:url" content="https://www.codyze.io/docs/getting-started/configuration/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-05-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-24T00:00:00+00:00" /><meta property="og:site_name" content="Codyze" />
 
-<meta itemprop="name" content="Using the Codyze Console">
-<meta itemprop="description" content="The Codyze console allows to interactively explore and analye source code.
-"><meta itemprop="datePublished" content="2020-05-25T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-20T19:56:53&#43;01:00" />
-<meta itemprop="wordCount" content="371">
+<meta itemprop="name" content="Configuration">
+<meta itemprop="description" content="Codyze offers a multitude of configurations to customize the analysis to your liking.
+"><meta itemprop="datePublished" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="76">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Using the Codyze Console"/>
-<meta name="twitter:description" content="The Codyze console allows to interactively explore and analye source code.
+<meta name="twitter:title" content="Configuration"/>
+<meta name="twitter:description" content="Codyze offers a multitude of configurations to customize the analysis to your liking.
 "/>
 
 
 
 
 
-<link rel="preload" href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" as="style">
-<link href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" as="style">
+<link href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -57,7 +57,7 @@
   crossorigin="anonymous"></script>
 
 
-    <title>Using the Codyze Console | Codyze</title>
+    <title>Configuration | Codyze</title>
   </head>
   <body class="td-page">
     <header>
@@ -103,7 +103,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 </div>
 </nav>
@@ -130,7 +130,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
@@ -181,36 +181,19 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgetting-startedconfiguration" href="/docs/getting-started/configuration/">Configure Codyze</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedcli" href="/docs/getting-started/cli/">Using CLI mode</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgetting-startedconsole" href="/docs/getting-started/console/">Using the Codyze Console</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/crymlin-query/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Crymlin Query Language</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docscrymlin-query">
-      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedlsp" href="/docs/getting-started/lsp/">Using plugins</a>
       
       
     </li>
@@ -312,14 +295,6 @@
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#starting-in-console-mode">Starting in Console Mode</a></li>
-    <li><a href="#server"><code>server</code></a></li>
-    <li><a href="#query"><code>query</code></a></li>
-  </ul>
-</nav>
-
 
 
           </div>
@@ -352,7 +327,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://www.codyze.io/docs/getting-started/console/">Using the Codyze Console</a>
+	<a href="https://www.codyze.io/docs/getting-started/configuration/">Configure Codyze</a>
 </li>
 
 	</ol>
@@ -360,119 +335,21 @@
 
             
 <div class="td-content">
-	<h1>Using the Codyze Console</h1>
-	<div class="lead">The Codyze console allows to interactively explore and analye source code.</div>
-	<h2 id="starting-in-console-mode">Starting in Console Mode</h2>
-<p>When starting Codyze with the <code>-t</code> option, it will start an interactive Python console that you can use to explore your source code projects.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#ce5c00;font-weight:bold">$</span> <span style="color:#000">codyze</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">t</span>
-
-      ██████╗ ██████╗ ██████╗ ██╗   ██╗███████╗███████╗
-     ██╔════╝██╔═══██╗██╔══██╗╚██╗ ██╔╝╚══███╔╝██╔════╝
-     ██║     ██║   ██║██║  ██║ ╚████╔╝   ███╔╝ █████╗  
-     ██║     ██║   ██║██║  ██║  ╚██╔╝   ███╔╝  ██╔══╝  
-     ╚██████╗╚██████╔╝██████╔╝   ██║   ███████╗███████╗
-      ╚═════╝ ╚═════╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
-     
-                     <span style="color:#000">Welcome</span> <span style="color:#000">to</span> <span style="color:#000">Codyze</span><span style="color:#ce5c00;font-weight:bold">!</span>
-                <span style="color:#000">To</span> <span style="color:#000">get</span> <span style="color:#000">help</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">enter</span> <span style="color:#4e9a06">&#34;help()&#34;</span>
-
-<span style="color:#ce5c00;font-weight:bold">&gt;&gt;&gt;</span>
-</code></pre></div><p>The console is a standard python console and offers a few extra commands to load, analyze, and explore source code with Codyze. It supports the following standard keyboard shortcuts:</p>
-<table>
-<thead>
-<tr>
-<th>Object</th>
-<th>Shorthand</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><kbd>CTRL</kbd>+<kbd>C</kbd> or <kbd>CTRL</kbd>+<kbd>D</kbd></td>
-<td>Leaves the console</td>
-</tr>
-<tr>
-<td><kbd>UP</kbd>, <kbd>DOWN</kbd></td>
-<td>Navigate backand forth in command history</td>
-</tr>
-<tr>
-<td><kbd>CTRL</kbd>+<kbd>R</kbd></td>
-<td>Search in command history</td>
-</tr>
-<tr>
-<td><kbd>ALT</kbd>+<kbd>B</kbd></td>
-<td>Go back one word</td>
-</tr>
-<tr>
-<td><kbd>ALT</kbd>+<kbd>F</kbd></td>
-<td>Go forth one word</td>
-</tr>
-</tbody>
-</table>
-<p>To run any Python snippet, simply enter it at the command prompt:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ce5c00;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#204a87;font-weight:bold">print</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;Hello world&#39;</span><span style="color:#000;font-weight:bold">)</span>
-<span style="color:#000">Hello</span> <span style="color:#000">world</span>
-</code></pre></div><p>To interact with Codyze, the console provides three main objects: <code>server</code>, <code>query</code> and <code>graph</code>. Each object has a shorthand notation that is an alias to save a few keystrokes, so instead of <code>server</code> you may simply type <code>s</code>.</p>
-<table>
-<thead>
-<tr>
-<th>Object</th>
-<th>Shorthand</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>server</td>
-<td>s</td>
-</tr>
-<tr>
-<td>query</td>
-<td>q</td>
-</tr>
-<tr>
-<td>graph</td>
-<td>g</td>
-</tr>
-</tbody>
-</table>
-<h2 id="server"><code>server</code></h2>
-<p>The <code>server</code> object controls the Codyze analysis server. Use it to load source code projects, MARK files, and start the analysis.</p>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>s.analyze(path)</code></td>
-<td>Starts the analysis for the given folder or source file.</td>
-</tr>
-<tr>
-<td><code>s.show_findings()</code></td>
-<td>List all findings, including correct and incorrect uses of MARK rules. Make sure to call <code>analyze</code> before. Note that the line numbers displayed by <code>show_findings()</code> start counting at 1, as your editor does.</td>
-</tr>
-<tr>
-<td><code>s.list_rules()</code></td>
-<td>List all MARK rules which are currently active.</td>
-</tr>
-<tr>
-<td><code>s.load_rules(path)</code></td>
-<td>Load additional MARK rules from the given folder or file. Make sure to load rules before calling <code>analyze</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="query"><code>query</code></h2>
-<p>The <code>query</code> object provides access to the Crymlin query interface. Crymlin is an extension of the Apache Gremlin graph traversal language and comes with various shortcuts for exploring code property graphs. To get a first impression of Crymlin, consider the following snippet:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ce5c00;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000">q</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">methods</span><span style="color:#000;font-weight:bold">()</span>
-     <span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">()</span>
-     <span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">toList</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000;font-weight:bold">[</span><span style="color:#000">main</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">toString</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">myMethod</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">someOtherMethod</span><span style="color:#000;font-weight:bold">]</span>
-</code></pre></div><p>This snippet uses the query object <code>q</code> to get all methods (in all files and all classes) from the graph, retrieves their names (<code>name</code>) and collect them in a list (<code>toList</code>).</p>
+	<h1>Configuration</h1>
+	<div class="lead">Codyze offers a multitude of configurations to customize the analysis to your liking.</div>
+	<p>Codyze can be configured through command line options when starting codyze.</p>
+<p>The most important options are</p>
+<ul>
+<li>the execution modes (<code>-c</code>. <code>-l</code> and <code>-t</code>)</li>
+<li>the source path (<code>-s &lt;sourcepath&gt;</code>)</li>
+<li>the path to the MARK files (<code>-m &lt;markpath&gt;</code>)</li>
+</ul>
+<p>Another way for configuring Codyze is through a YAML configuration file. Use <code>--config</code> to specify the path to the file.</p>
+<p>For more information about the configuration file and a complete list of all configurations, please refer to our <a href="https://github.com/Fraunhofer-AISEC/codyze/wiki/Configuring-Codyze">wiki page</a></p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 20, 2021: <a  href="/commit/d807fe7f24e58497ad0925ebb0fd411b376cef9b">Documentation update (d807fe7f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 24, 2022
 </div>
 </div>
 
@@ -525,7 +402,7 @@
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 Fraunhofer AISEC All Rights Reserved</small>
+        <small class="text-white">&copy; 2022 Fraunhofer AISEC All Rights Reserved</small>
         <small class="ml-1"><a href="https://www.aisec.fraunhofer.de/en/data_protection.html" target="_blank">Privacy Policy</a></small>
 	
       </div>
@@ -547,7 +424,7 @@
 
 
 
-<script src="/js/main.min.b5c846b8d2996d7bafac026aa017523479f9839b6ef44c5a3f80093febafc4af.js" integrity="sha256-tchGuNKZbXuvrAJqoBdSNHn5g5tu9ExaP4AJP&#43;uvxK8=" crossorigin="anonymous"></script>
+<script src="/js/main.min.20e61c746b3b89f878c8f7a9526cdd30f74eed7d7b0a06489ab1b7b099fb52ba.js" integrity="sha256-IOYcdGs7ifh4yPepUmzdMPdO7X17CgZImrG3sJn7Uro=" crossorigin="anonymous"></script>
 
 
 

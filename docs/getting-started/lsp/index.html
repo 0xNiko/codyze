@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.95.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://www.codyze.io/docs/crymlin-query/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,25 +20,30 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Crymlin Query Language | Codyze</title><meta property="og:title" content="Crymlin Query Language" />
-<meta property="og:description" content="Crymlin is a query language to explore code property graphs
+<title>Using plugins | Codyze</title><meta property="og:title" content="Using plugins" />
+<meta property="og:description" content="Integrate Codyze into IDEs through plugins and automatically scan your code while programming.
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.codyze.io/docs/crymlin-query/" /><meta property="og:site_name" content="Codyze" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.codyze.io/docs/getting-started/lsp/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-05-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-24T00:00:00+00:00" /><meta property="og:site_name" content="Codyze" />
 
-<meta itemprop="name" content="Crymlin Query Language">
-<meta itemprop="description" content="Crymlin is a query language to explore code property graphs
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Crymlin Query Language"/>
-<meta name="twitter:description" content="Crymlin is a query language to explore code property graphs
+<meta itemprop="name" content="Using plugins">
+<meta itemprop="description" content="Integrate Codyze into IDEs through plugins and automatically scan your code while programming.
+"><meta itemprop="datePublished" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="457">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using plugins"/>
+<meta name="twitter:description" content="Integrate Codyze into IDEs through plugins and automatically scan your code while programming.
 "/>
 
 
 
 
 
-<link rel="preload" href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" as="style">
-<link href="/scss/main.min.6b7bd22592d34a6fb4c51fa80e11006ed1447d5aaf4aa8e1ba4303ad23a47d8a.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" as="style">
+<link href="/scss/main.min.952e0fa5b0057bb3baa5fec92a4987b66fcaa6ddbffe20d7499aee7680903635.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -53,9 +57,9 @@
   crossorigin="anonymous"></script>
 
 
-    <title>Crymlin Query Language | Codyze</title>
+    <title>Using plugins | Codyze</title>
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -99,7 +103,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 </div>
 </nav>
@@ -126,7 +130,7 @@
   placeholder="&#xf002; Search this site…"
   aria-label="Search this site…"
   autocomplete="off"
-  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.9a9f8910a62be3afac833af63952b8d558e1c21245d87eb0d34582ab87af7f68ebf7fd10465c5fff03c30b83e5e584e3bec937a71ac96621f6f91e9f31f09063.json"
+  data-offline-search-index-json-url="https://www.codyze.io/offline-search-index.8213efcb3651586afa5644ac1ce37188b817f27d939f73b806d109f5b1e0dc10e8d7e1d190d9294b0fde5eb8d54cbcf2c1eed233369a9adb5eb97fe9769d083b.json"
 >
 
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
@@ -161,10 +165,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Get Started</a>
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Get Started</a>
   </li>
   <ul>
-    <li class="collapse " id="docsgetting-started">
+    <li class="collapse show" id="docsgetting-started">
       
       
       
@@ -177,36 +181,19 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconfiguration" href="/docs/getting-started/configuration/">Configure Codyze</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedcli" href="/docs/getting-started/cli/">Using CLI mode</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedconsole" href="/docs/getting-started/console/">Using the Codyze Console</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/crymlin-query/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Crymlin Query Language</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="docscrymlin-query">
-      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgetting-startedlsp" href="/docs/getting-started/lsp/">Using plugins</a>
       
       
     </li>
@@ -310,13 +297,11 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#traversal-sources">Traversal Sources</a></li>
-        <li><a href="#traversal-steps">Traversal Steps</a></li>
-        <li><a href="#query-terminators">Query terminators</a></li>
-      </ul>
-    </li>
+    <li><a href="#integration-in-eclipse">Integration in Eclipse</a></li>
+    <li><a href="#integration-in-intellij">Integration in IntelliJ</a></li>
+    <li><a href="#integration-in-visual-studio-2019">Integration in Visual Studio 2019</a></li>
+    <li><a href="#integration-in-visual-studio-code">Integration in Visual Studio Code</a></li>
+    <li><a href="#integration-through-lsp-mode">Integration through LSP mode</a></li>
   </ul>
 </nav>
 
@@ -334,6 +319,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://www.codyze.io/docs/">Documentation</a>
 </li>
@@ -341,8 +329,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://www.codyze.io/docs/getting-started/">Get Started</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://www.codyze.io/docs/crymlin-query/">Crymlin Query Language</a>
+	<a href="https://www.codyze.io/docs/getting-started/lsp/">Using plugins</a>
 </li>
 
 	</ol>
@@ -350,281 +345,74 @@
 
             
 <div class="td-content">
-	<h1>Crymlin Query Language</h1>
-	<div class="lead">Crymlin is a query language to explore code property graphs</div>
-	<p>Crymlin is an extension of the graph traversal language <a href="https://tinkerpop.apache.org/gremlin.html">Apache Gremlin</a> that comes with additional expressions for exploring code property graphs.</p>
-<p>A graph traversal is an iterator over elements of the graph (nodes, edges, labels, properties) that always starts with a <em>traversal source</em>, then continues with any number of <em>traversal steps</em> and ends with a single <em>terminator step</em>. To understand these concepts, let&rsquo;s consider a simple example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ce5c00;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000">q</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">methods</span><span style="color:#000;font-weight:bold">()</span>
-     <span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">()</span>
-     <span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">toList</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000;font-weight:bold">[</span><span style="color:#000">main</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">toString</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">myMethod</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">someOtherMethod</span><span style="color:#000;font-weight:bold">]</span>
-</code></pre></div><p>In this example, <code>methods()</code> is a <em>traversal source</em> that starts iterating the graph at all nodes representing a method. <code>name()</code> is a <em>traversal step</em> that retrieves the <code>name</code> property of these nodes and <code>toList()</code> is a <em>terminator</em> that collects all names in a list. Every graph traversal needs a terminator to produce meaningful output. Until the console encounters a terminator, it will treat the graph traversal as an iterator that can be modified by further traversal steps.</p>
-<p>So, the general structure of a Crymlin query is</p>
-<pre><code> q.&lt;traversal source&gt;.&lt;traversal steps&gt;. ... .&lt;terminator&gt;
-</code></pre><h3 id="traversal-sources">Traversal Sources</h3>
-<p>Every query must begin with a traversal <em>source</em> which retrieves an initial iterator over nodes from the graph which can then be modified by further traversal steps. The most simple source is <code>V()</code> which includes all nodes of the graph.</p>
-<table>
-<thead>
-<tr>
-<th>Traversal Source</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.callsFqn(String fqn)</code></td>
-<td>Calls to functions/methods (<code>CallExpression</code>) whose (fully qualified) name <em>matches exactly</em> the argument.</td>
-</tr>
-<tr>
-<td><code>.byID(long)</code></td>
-<td>Node by its ID (<code>Node</code>)</td>
-</tr>
-<tr>
-<td><code>.calls()</code></td>
-<td>All function/method calls (<code>CallExpression</code>)</td>
-</tr>
-<tr>
-<td><code>.calls(String)</code></td>
-<td>Calls to functions/methods whose (fully qualified) name contains the argument. (<code>CallExpression</code>)</td>
-</tr>
-<tr>
-<td><code>.ctors(String)</code></td>
-<td>Constructors containing a given type (<code>ConstructExpression</code>)</td>
-</tr>
-<tr>
-<td><code>.fields()</code></td>
-<td>Field declarations (<code>FieldDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.functions()</code></td>
-<td>All functions/methods (<code>FunctionDeclaration</code>, <code>MethodDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.functions(String)</code></td>
-<td>Functions/methods containing the given name (<code>FunctionDeclaration</code>, <code>MethodDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.ifstmts()</code></td>
-<td>All IfStatements (<code>IfStatement</code>)</td>
-</tr>
-<tr>
-<td><code>.ifstmts(String)</code></td>
-<td>IfStatements whose code contains the given substring (<code>IfStatement</code>)</td>
-</tr>
-<tr>
-<td><code>.methods()</code></td>
-<td>All class methods (Note: rather use &lsquo;functions()&rsquo; to include C/C++ functions) (<code>MethodDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.methods(String)</code></td>
-<td>Class methods containing the given name (Note: rather use &lsquo;functions()&rsquo; to include C/C++ functions)  (<code>MethodDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.namespaces()</code></td>
-<td>Namespaces (<code>NamespaceDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.namespaces(String)</code></td>
-<td>Namespaces containing the given substring (<code>NamespaceDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.nextCallByID(long)</code></td>
-<td>Next call statement following node by ID (<code>CallExpression</code>)</td>
-</tr>
-<tr>
-<td><code>.prevCallByID(long)</code></td>
-<td>Next call statement following node by ID (<code>CallExpression</code>)</td>
-</tr>
-<tr>
-<td><code>.records()</code></td>
-<td>All RecordDeclarations (Java classes, enums, C/C++ structs) (<code>RecordDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.records(String)</code></td>
-<td>RecordDeclarations (Java classes, enums, C/C++ structs) containing the given name (<code>RecordDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.returns()</code></td>
-<td>All return statements (<code>ReturnStatement</code>)</td>
-</tr>
-<tr>
-<td><code>.sourcefiles()</code></td>
-<td>All source code files (<code>TranslationUnit</code>)</td>
-</tr>
-<tr>
-<td><code>.sourcefiles(String)</code></td>
-<td>Source code file containing the given name (<code>TranslationUnit</code>)</td>
-</tr>
-<tr>
-<td><code>.statements()</code></td>
-<td>Statements (<code>Statement</code>)</td>
-</tr>
-<tr>
-<td><code>.typedefs()</code></td>
-<td>All typedefs (<code>TypedefDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.typedefs(String)</code></td>
-<td>All typedefs containing the given name  (<code>TypedefDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.valdecl()</code></td>
-<td>All declarations of values (parameters, variables, fields, enums constants) (<code>ValueDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.valdecl(String)</code></td>
-<td>All declarations of values (parameters, variables, fields, enums constants) containing the given name (<code>ValueDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.vars()</code></td>
-<td>Variable declarations. Use valdecl() instead to include parameters, fields, and enums. (<code>VariableDeclaration</code>)</td>
-</tr>
-<tr>
-<td><code>.V()</code></td>
-<td>All nodes in the graph</td>
-</tr>
-</tbody>
-</table>
-<h3 id="traversal-steps">Traversal Steps</h3>
-<p>Traversal sources and steps are the main operators of Crymlin queries. They determine which nodes and properties are retrieved from the graph. The Crymlin query language accepts all traversal steps supported by Apache Gremlin, plus the following steps which are specific to the exploration of the code property graph. Please refer to the <a href="https://tinkerpop.apache.org/gremlin.html">Apache Gremlin Specification</a> for further supported traversal steps.</p>
-<table>
-<thead>
-<tr>
-<th>Traversal Step    </th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span style="white-space: nowrap;"><code>.argument(int n)</code></span></td>
-<td>Returns the the n-th argument of a function or method call (<code>ArgumentExpression</code>)</td>
-</tr>
-<tr>
-<td><code>code()</code></td>
-<td>Original source code of the selected node(s)</td>
-</tr>
-<tr>
-<td><code>comment()</code></td>
-<td>Comments attached to the selected node(s)</td>
-</tr>
-<tr>
-<td><code>condition()</code></td>
-<td>Condition (of an IfStatement)</td>
-</tr>
-<tr>
-<td><code>condition(String</code>)</td>
-<td>Condition (of an IfStatement) containing the given substring</td>
-</tr>
-<tr>
-<td><code>elseStmt()</code></td>
-<td>&lsquo;else&rsquo; block (of an IfStatement)</td>
-</tr>
-<tr>
-<td><code>line()</code></td>
-<td>Source code line of the selected node(s)</td>
-</tr>
-<tr>
-<td><code>name()</code></td>
-<td>Name of the selected node(s)</td>
-</tr>
-<tr>
-<td><code>nextCfg()</code></td>
-<td>Next node(s) in Control Flow Graph</td>
-</tr>
-<tr>
-<td><code>nextEog()</code></td>
-<td>Next node(s) in Evaluation Order Graph</td>
-</tr>
-<tr>
-<td><code>prevCfg()</code></td>
-<td>Previous node(s) in Control Flow Graph</td>
-</tr>
-<tr>
-<td><code>prevEog()</code></td>
-<td>Previous node(s) in Evaluation Order Graph</td>
-</tr>
-<tr>
-<td><code>thenStmt()</code></td>
-<td>&lsquo;then&rsquo; block (of an IfStatement)</td>
-</tr>
-<tr>
-<td><code>type()</code></td>
-<td>Type of the node(s)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="query-terminators">Query terminators</h3>
-<p>The most used terminators are:</p>
-<table>
-<thead>
-<tr>
-<th>Terminator</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.next()</code></td>
-<td>Returns the first element that matches the query or <code>NoSuchElementException</code> if the query result is empty.</td>
-</tr>
-<tr>
-<td><code>.tryNext()</code></td>
-<td>Returns the first element that matches the query or an empty <code>Optional</code> if the query result is empty.</td>
-</tr>
-<tr>
-<td><code>.toList()</code></td>
-<td>Collects all query results in a list and returns it. Not that for queries returning very large result sets, this terminator will consume more memory and CPU time.</td>
-</tr>
-<tr>
-<td><code>.toSet()</code></td>
-<td>Collects all query results in a set (removing duplicates) and returns it. Note that for queries returning very large result sets, this terminator will consume more memory and CPU time.</td>
-</tr>
-<tr>
-<td><code>.count()</code></td>
-<td>Returns the number of elements matches by the query.</td>
-</tr>
-</tbody>
-</table>
-
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
+	<h1>Using plugins</h1>
+	<div class="lead">Integrate Codyze into IDEs through plugins and automatically scan your code while programming.</div>
+	<p>Codyze can be integrated into multiple IDEs to automatically scan your code for errors.</p>
+<h2 id="integration-in-eclipse">Integration in Eclipse</h2>
+<p>The Codyze plugin can be installed from an Eclipse update site. It has been tested against Eclipse 2019-12 and later.</p>
+<ol>
+<li>In Eclipse, click on <code>Help</code>-&gt;<code>Install New Software...</code></li>
+<li>Click <code>Add...</code> to add a new update site</li>
+<li>Choose a name and enter the location <a href="https://codyze.s3.eu-central-1.amazonaws.com/codyze-eclipse-plugin/">https://codyze.s3.eu-central-1.amazonaws.com/codyze-eclipse-plugin/</a> (note that this is an Eclipse update site URL and not suited to open with a web browser)</li>
+</ol>
+<p><img src="/img/eclipse-update-site.png" 
+alt="Adding Eclipse Update Site"
+class="mt-3 mb-3 border border-info rounded"></p>
+<ol start="4">
+<li>Choose and install <code>Codyze Code Analyzer</code></li>
+</ol>
+<p><img src="/img/eclipse-plugin-installation.png" 
+alt="Adding Eclipse Update Site"
+class="mt-3 mb-3 border border-info rounded"></p>
+<p>Once installed, configure the Eclipse plugin to use the local LSP server:</p>
+<ol>
+<li>Go to <em>Windows-&gt;Preferences-&gt;Codyze Code Analysis</em> and configure the path to the analysis server binary</li>
+</ol>
+<p><img src="/img/eclipse-plugin-2.png" 
+alt="Configuring Eclipse Plugin"
+class="mt-3 mb-3 border border-info rounded"></p>
+<ol start="2">
+<li>If the configuration is correct, <code>.java</code> and <code>.cpp</code> files will be automatically scanned when they are saved. Any errors found by Codyze will be highlighted as problems. If Codyze verifies that an API is correctly used, it will mark the line with a hint.</li>
+</ol>
+<p><img src="/img/eclipse-plugin-1.png" 
+alt="Configuring Eclipse Plugin"
+class="mt-3 mb-3 border border-info rounded"></p>
+<h2 id="integration-in-intellij">Integration in IntelliJ</h2>
+<ol>
+<li>Download and install the <code>LSP Support</code> plugin. Restart IntelliJ.</li>
+<li>Go to <code>Settings</code> -&gt; <code>Language Server Protocol</code> -&gt; <code>Server Definitions</code></li>
+<li>Add a new server definition of type <code>Executable</code> for extension <code>java</code> and navigate to your local <code>codyze-&lt;version&gt;/bin/codyze</code> script.</li>
+</ol>
+<p><img src="/img/lsp-settings-intellij.png" 
+alt="IntelliJ LSP Settings" 
+class="mt-3 mb-3 border border-info rounded"></p>
+<p>If everything works as intended, you should see a green circle in your IntelliJ status bar, indicating that the connection to the language server was successful.</p>
+<h2 id="integration-in-visual-studio-2019">Integration in Visual Studio 2019</h2>
+<p>The Codyze plugin can be installed from the Visual Studio 2019 Marketplace</p>
+<p><img src="/img/vs-plugin.jpg" 
+alt="Installation from Visual Studio Market" 
+class="mt-3 mb-3 border border-info rounded"></p>
+<p>If you prefer installing the plugin from the release page, proceed as follows:</p>
+<ol>
+<li>Download the zipped extension from the <a href="https://github.com/Fraunhofer-AISEC/codyze-vs-plugin/releases">release page</a></li>
+<li>Unzip the file</li>
+<li>Double-click the VSIX-file to install the extension</li>
+<li>Launch Visual Studio</li>
+</ol>
+<p>On startup, the plugin will ask you for the path to Codyze and to the mark files you want to use. If everythings checks out, the plugin will automatically start an instance of Codyze when a solution is opened. It will then scan <code>.cpp</code> files when opened or saved and highlight potential problems.</p>
+<p>To adjust the path to Codyze, the mark files or change the command line arguments used for Codyze, in Visual Studio go to <code>Tools</code> -&gt; <code>Options...</code> -&gt; <code>Codyze Plugin</code> -&gt; <code>Codyze Settings</code>.</p>
+<h2 id="integration-in-visual-studio-code">Integration in Visual Studio Code</h2>
+<p>We build a Visual Studio Code plugin of Codyze for every new version. You can download a bundled <code>*.vsix</code> plugin from the <a href="https://github.com/Fraunhofer-AISEC/codyze/releases">release page of Codyze <i class="fas fa-external-link-alt"></i></a>.</p>
+<h2 id="integration-through-lsp-mode">Integration through LSP mode</h2>
+<p>Codyze offers an LSP mode. You can user the LSP mode to integrate Codyze into any IDE or text editor with support for LSP. You need to look up the recommended approach for your favorite IDE or text editor.</p>
+<p>Once you know, how to configure an LSP tool, you need to start Codyze in LSP mode, i.e. <code>codyze -l</code>. Please refer to the <a href="/docs/getting-started/configuration/">configuration page</a>.</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 30, 2020: <a  href="/commit/8c313dfb906e16c3056e7224353086d85878fc32">Doc&#43;&#43; (8c313dfb)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 24, 2022
 </div>
 </div>
+
 
           </main>
         </div>
@@ -674,7 +462,7 @@
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 Fraunhofer AISEC All Rights Reserved</small>
+        <small class="text-white">&copy; 2022 Fraunhofer AISEC All Rights Reserved</small>
         <small class="ml-1"><a href="https://www.aisec.fraunhofer.de/en/data_protection.html" target="_blank">Privacy Policy</a></small>
 	
       </div>
@@ -696,7 +484,7 @@
 
 
 
-<script src="/js/main.min.b5c846b8d2996d7bafac026aa017523479f9839b6ef44c5a3f80093febafc4af.js" integrity="sha256-tchGuNKZbXuvrAJqoBdSNHn5g5tu9ExaP4AJP&#43;uvxK8=" crossorigin="anonymous"></script>
+<script src="/js/main.min.20e61c746b3b89f878c8f7a9526cdd30f74eed7d7b0a06489ab1b7b099fb52ba.js" integrity="sha256-IOYcdGs7ifh4yPepUmzdMPdO7X17CgZImrG3sJn7Uro=" crossorigin="anonymous"></script>
 
 
 

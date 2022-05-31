@@ -4,6 +4,7 @@
     <link>https://www.codyze.io/docs/mark-authors/</link>
     <description>Recent content in Write MARK Policies on Codyze</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="https://www.codyze.io/docs/mark-authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,19 +23,21 @@
       <description>
         
         
-        &lt;p&gt;MARK is a simple domain specific language (DSL) that can be written in any text editor. We recommend however using the MARK Eclipse plugin which brings syntax highlighting, auto-completion, and some other benefits that will support you in writing MARK rules.&lt;/p&gt;
+        &lt;p&gt;MARK is a simple domain specific language (DSL) that can be written in any text editor. We however recommend using the MARK Eclipse plugin which brings syntax highlighting, auto-completion, and some other benefits that will support you in writing MARK rules.&lt;/p&gt;
 &lt;h2 id=&#34;install-the-mark-eclipse-plugin&#34;&gt;Install the MARK Eclipse Plugin&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;In Eclipse, click on &lt;code&gt;Help&lt;/code&gt;-&amp;gt;&lt;code&gt;Install new software&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In Eclipse, click on &lt;code&gt;Help&lt;/code&gt;-&amp;gt;&lt;code&gt;Install New Software...&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add the update site: &lt;code&gt;https://codyze.s3.eu-central-1.amazonaws.com/codyze-mark-eclipse-plugin/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Install (TODO: Name of product in eclipse update site)&lt;/li&gt;
+&lt;li&gt;Install &lt;img src=&#34;https://www.codyze.io/img/eclipse-mark-plugin.png&#34; alt=&#34;Install Codyze MARK plugin&#34; class=&#34;mt-3 mb-3 border border-info rounded&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;start-writing-mark-policies&#34;&gt;Start writing MARK policies&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Create a new project by clicking on &lt;code&gt;New&lt;/code&gt;-&amp;gt;&lt;code&gt;Project&lt;/code&gt;. The project type does not matter.&lt;/li&gt;
+&lt;li&gt;Create a new project by clicking on &lt;code&gt;File&lt;/code&gt;-&amp;gt;&lt;code&gt;New&lt;/code&gt;-&amp;gt;&lt;code&gt;Project&lt;/code&gt;. The project type does not matter.&lt;/li&gt;
 &lt;li&gt;Create a new file with the extension &lt;code&gt;.mark&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start writing entities and rules. You may include all entities and rules in a single MARK file or organize them in multiple files as you with. As long as all MARK files are located in the same folder, Codyze will load entities and rules from all files in that folder.&lt;/li&gt;
+&lt;li&gt;Confirm the dialog to configure Xtext for your project.&lt;/li&gt;
+&lt;li&gt;Start writing &lt;a href=&#34;https://www.codyze.io/docs/mark-authors/define-entities/&#34;&gt;entities &lt;i class=&#34;fas fa-arrow-alt-circle-right&#34;&gt;&lt;/i&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.codyze.io/docs/mark-authors/mark-authors/&#34;&gt;rules &lt;i class=&#34;fas fa-arrow-alt-circle-right&#34;&gt;&lt;/i&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;You may include all entities and rules in a single MARK file or organize them in multiple files as you with. As long as all MARK files are located in the same folder, Codyze will load entities and rules from all files in that folder.&lt;/p&gt;
 
       </description>
     </item>
@@ -48,26 +51,26 @@
       <description>
         
         
-        &lt;p&gt;MARK rules refer to &lt;em&gt;entities&lt;/em&gt; - abstract objects that wrap the real object classes of the analyzed programming language (in case of object oriented languages) and group methods with similar semantics in so-called _op_s. A MARK entity defines three parts:&lt;/p&gt;
+        &lt;p&gt;MARK rules refer to &lt;em&gt;entities&lt;/em&gt; - abstract objects that wrap the real object classes of the analyzed programming language (in case of object oriented languages) and group methods with similar semantics in so-called &lt;em&gt;op&lt;/em&gt;s. A MARK entity defines three parts:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A &lt;em&gt;name&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;A set of &lt;em&gt;ops&lt;/em&gt; (operations)&lt;/li&gt;
+&lt;li&gt;A set of &lt;em&gt;op&lt;/em&gt;s (operations)&lt;/li&gt;
 &lt;li&gt;A set of MARK &lt;em&gt;variables&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Writing MARK rules for a library requires a good understanding of the library API and its class hierarchy. We recommend the following approach to writing MARK entities.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Model relevant classes as MARK entities&lt;/li&gt;
-&lt;li&gt;Define _op_s and variables&lt;/li&gt;
-&lt;li&gt;(Optionally) blacklist some _op_s&lt;/li&gt;
+&lt;li&gt;Define &lt;em&gt;op&lt;/em&gt;s and variables&lt;/li&gt;
+&lt;li&gt;(Optionally) blacklist some &lt;em&gt;op&lt;/em&gt;s&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;model-relevant-classes-as-mark-entities&#34;&gt;Model relevant classes as MARK entities&lt;/h2&gt;
 &lt;p&gt;It is certainly not necessary to model all classes of the software library as MARK entities. Rather, you need to identify those classes which hold relevant data or provide functions. Although in many cases, several classes of the programming language can be summarized in one abstract MARK entity, it might be easier to directly map classes to entities in the first iteration.&lt;/p&gt;
 &lt;p&gt;The name of an entity can be freely chosen. If it refers to a specific class in the programming language, though, it might make sense to name them accordingly.&lt;/p&gt;
 &lt;h2 id=&#34;define-ops-and-variables&#34;&gt;Define Ops and variables&lt;/h2&gt;
-&lt;p&gt;The next step is to define _op_s. An &lt;em&gt;op&lt;/em&gt; is a group of semantically equal or similar functions, methods, or constructors, given as fully qualified signatures. Especially overloaded functions with the same name but different parameters are candidates for being grouped in an &lt;em&gt;op&lt;/em&gt;. For cryptographic libraries, typical _op_s are:&lt;/p&gt;
+&lt;p&gt;The next step is to define &lt;em&gt;op&lt;/em&gt;s. An &lt;em&gt;op&lt;/em&gt; is a group of semantically equal or similar functions, methods, or constructors, given as fully qualified signatures. Especially overloaded functions with the same name but different parameters are candidates for being grouped in an &lt;em&gt;op&lt;/em&gt;. For cryptographic libraries, typical &lt;em&gt;op&lt;/em&gt;s are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;instantiate&lt;/code&gt; - a group of functions for instantiating a class or creating an object of a class&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;initialize&lt;/code&gt; - a group of functions that initialize a cryptographic algorithms, e.g. by setting a key or initialization vector.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;initialize&lt;/code&gt; - a group of functions that initialize a cryptographic algorithms, e.g. by setting a key or initialization vector&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;update&lt;/code&gt; - a group of functions that process further data by a cryptographic algorithm&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;finalize&lt;/code&gt;- a group of functions that terminate a cryptographic algorithm&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;reset&lt;/code&gt;- a group of functions that reset a cryptographic algorithm and make it ready for further processing.&lt;/li&gt;
@@ -102,7 +105,7 @@
   }
 }
 &lt;/pre&gt;
-&lt;h2 id=&#34;optionally-blacklist-some-_ops_s&#34;&gt;(Optionally) blacklist some _ops_s&lt;/h2&gt;
+&lt;h2 id=&#34;optionally-blacklist-some-ops&#34;&gt;(Optionally) blacklist some Ops&lt;/h2&gt;
 &lt;p&gt;In some cases, groups of functions or methods should not be used at all by a program. This applies e.g. to deprecated functions or functions that are known to be insecure. MARK provides a shortcut to mark any use of such functions as insecure: the &lt;code&gt;forbidden&lt;/code&gt; keyword.&lt;/p&gt;
 &lt;pre&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;entity&lt;/span&gt; Crypto {
@@ -222,29 +225,102 @@
 &lt;/pre&gt;
 &lt;h3 id=&#34;built-in-predicates&#34;&gt;Built-in Predicates&lt;/h3&gt;
 &lt;p&gt;MARK comes with a number of built in functions that can be used as predicates in conditions and preconditions. These built-ins are called when MARK rules are evaluated and operate over their input arguments (typically MARK objects or constants) and the current evaluation context. By convention, built-ins should start with an underscore (&lt;code&gt;_&lt;/code&gt;). When a built-in fails, it will return an &lt;code&gt;Error&lt;/code&gt; object that always evaluates to &lt;em&gt;not applicable&lt;/em&gt;, i.e. neither true nor false.&lt;/p&gt;
+&lt;h4 id=&#34;_between&#34;&gt;_between&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_between(String str, String start, String end)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _between(&amp;#34;&amp;lt;09&amp;gt;&amp;#34;, &amp;#34;&amp;lt;&amp;#34;, &amp;#34;&amp;gt;&amp;#34;) == &amp;#34;09&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns the part of the string between &lt;code&gt;start&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; which both have to be part of the string. If &lt;code&gt;start&lt;/code&gt; or &lt;code&gt;end&lt;/code&gt; are not part of the string, this returns an &lt;code&gt;Error&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;_direct_eog_connection&#34;&gt;_direct_eog_connection&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_direct_eog_connection(Node n1, Node n2)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _direct_eog_connection(n1, n2)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Checks if there is a &lt;em&gt;direct&lt;/em&gt; EOG-connection (i.e., without branches) between the two given vertices.&lt;/p&gt;
+&lt;h4 id=&#34;_eog_connection&#34;&gt;_eog_connection&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_eog_connection(Node n1, Node n2)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _eog_connection(n1, n2)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Checks if there is an arbitrary EOG-connection between the two given vertices.&lt;/p&gt;
+&lt;h4 id=&#34;_get_code&#34;&gt;_get_code&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_get_code(a)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;  TODO&lt;/p&gt;
+&lt;p&gt;Returns the corresponding source code of MARK object &lt;code&gt;a&lt;/code&gt;. If this is not possible, this returns an &lt;code&gt;Error&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;_has_value&#34;&gt;_has_value&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;__has_value(a,b)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  ensure
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
      __has_value(a, b)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt; if MARK object &lt;code&gt;a&lt;/code&gt; may be assigned value &lt;code&gt;b&lt;/code&gt; (e.g., a constant).&lt;/p&gt;
 &lt;h4 id=&#34;_inside_same_function&#34;&gt;_inside_same_function&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;__inside_same_function(a,b)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  ensure
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
      __inside_same_function(a, b)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt; if MARK objects &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; reside in the same function.&lt;/p&gt;
 &lt;h4 id=&#34;_is&#34;&gt;_is&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_is(a,b)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  ensure
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
      _is(a, b)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt; if MARK object &lt;code&gt;a&lt;/code&gt; is equal to variable &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;_is_instance&#34;&gt;_is_instance&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_is_instance(a, String classname)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _is_instance(a, &amp;#34;java.lang.String&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt; if MARK object &lt;code&gt;a&lt;/code&gt; is an instance of &lt;code&gt;classname&lt;/code&gt;. &lt;code&gt;classname&lt;/code&gt; has to be the fully qualified name of the class.&lt;/p&gt;
+&lt;h4 id=&#34;_length&#34;&gt;_length&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_length(a)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+    _length(a) == 5 // e.g. for array declaration `new int[5]`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns the length of MARK object &lt;code&gt;a&lt;/code&gt;. Currently, this can only return the dimension of an Java array.&lt;/p&gt;
+&lt;h4 id=&#34;_now&#34;&gt;_now&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_now()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+    _now() == 1653955200 // 2022-05-31T00:00:00Z
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns the current time as the number of seconds since epoch (1970-01-01T00:00:00Z). Relies on Java&amp;rsquo;s Instant.now().&lt;/p&gt;
+&lt;h4 id=&#34;_receives_value_from&#34;&gt;_receives_value_from&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_receives_value_from(a,b)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _receives_value_from(a, b)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt;, if there is a data flow from &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;_split&#34;&gt;_split&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_split(String str, String splitter, int position)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;  TODO&lt;/p&gt;
-&lt;p&gt;Behaves like the Java expression &lt;code&gt;String.split(String splitter)[position]&lt;/code&gt;. That is, it splits the string &lt;code&gt;str&lt;/code&gt; at all occurrences of &lt;code&gt;splitter&lt;/code&gt; and returns the &lt;code&gt;position&lt;/code&gt;th substring. Returns an &lt;code&gt;Error&lt;/code&gt; if no such occurrence is found.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _split(&amp;#34;ASD/EFG/JKL&amp;#34;, &amp;#34;/&amp;#34;, 1) == &amp;#34;EFG&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Behaves like the Java expression &lt;code&gt;String.split(String splitter)[position]&lt;/code&gt;. That is, it splits the string &lt;code&gt;str&lt;/code&gt; at all occurrences of &lt;code&gt;splitter&lt;/code&gt; and returns the &lt;code&gt;position&lt;/code&gt;th substring. Returns an &lt;code&gt;Error&lt;/code&gt; if no such occurrence is found.&lt;/p&gt;
+&lt;h4 id=&#34;_split_disjoint&#34;&gt;_split_disjoint&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_split_disjoint(String str, String splitter, List set)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _split_disjoint(&amp;#34;ASD/EFG/JKL&amp;#34;, &amp;#34;/&amp;#34;, [&amp;#34;ABC&amp;#34;, &amp;#34;EFG&amp;#34;, &amp;#34;JKL&amp;#34;])
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Splits &lt;code&gt;str&lt;/code&gt; at all occurrences of &lt;code&gt;splitter&lt;/code&gt; and checks, if any of the resulting elements is part of the provided set. Returns an &lt;code&gt;Error&lt;/code&gt; if no occurrence of &lt;code&gt;split&lt;/code&gt; is found.&lt;/p&gt;
+&lt;h4 id=&#34;_split_match_unordered&#34;&gt;_split_match_unordered&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_split_match_unordered(String str, String splitter, List set, Boolean strict)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _split_match_unordered(&amp;#34;ASD/EFG/JKL&amp;#34;, &amp;#34;/&amp;#34;, [&amp;#34;ASD&amp;#34;, &amp;#34;EFG&amp;#34;, &amp;#34;JKL&amp;#34;], true)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Splits &lt;code&gt;str&lt;/code&gt; at all occurrences of &lt;code&gt;splitter&lt;/code&gt; and checks, if resulting elements are part of the provided set. The optional parameter &lt;code&gt;strict&lt;/code&gt; controls if the set resulting from splitting should be identical to the provided set. Returns an &lt;code&gt;Error&lt;/code&gt; if no occurrence of &lt;code&gt;split&lt;/code&gt; is found.&lt;/p&gt;
+&lt;h4 id=&#34;_starts_with&#34;&gt;_starts_with&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_starts_with(String str, String start)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+     _starts_with(&amp;#34;ASDEFGJKL&amp;#34;, &amp;#34;ASD&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;str&lt;/code&gt; starts with &lt;code&gt;start&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;_year&#34;&gt;_year&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Function:&lt;/strong&gt; &lt;code&gt;_year(Int time)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
+    _year(1653955200) == 2022 // 2022-05-31T00:00:00Z
 
+Returns the year in which `time` is in. `time` represents the number of seconds since epoch (1970-01-01T00:00:00Z).
+&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
