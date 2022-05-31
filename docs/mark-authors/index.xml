@@ -318,9 +318,8 @@
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  ensure
     _year(1653955200) == 2022 // 2022-05-31T00:00:00Z
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns the year in which &lt;code&gt;time&lt;/code&gt; is in. &lt;code&gt;time&lt;/code&gt; represents the number of seconds since epoch (1970-01-01T00:00:00Z).&lt;/p&gt;
 
-Returns the year in which `time` is in. `time` represents the number of seconds since epoch (1970-01-01T00:00:00Z).
-&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
